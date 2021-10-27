@@ -4,10 +4,11 @@ micronaut:
 
 datasources:
   default:
-    url: jdbc:postgresql://localhost:5432/demo
+    url: ${APP_URL:`jdbc:postgresql://host.docker.internal:5432/demo`}
+    username: ${APP_USERNAME:postgres}
+    password: ${APP_PASSWORD:paula@123}
     driverClassName: org.postgresql.Driver
-    username: postgres
-    password: paula@123
+
 ---
 jpa:
   default:
