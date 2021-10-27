@@ -13,4 +13,4 @@ services:
       - DATABASE_USER=postgres
       - DATABASE_PASSWORD=paula@123
       - DATABASE_NAME=demo
-      - DATABASE_PORT=
+      - DATABASE_PORT=5432
