@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  web:
+    image: demo-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    enviroment:
+      - DATABASE_HOST=host.docker.internal
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=paula@123
+      - DATABASE_NAME=demo
+      - DATABASE_PORT=5432
